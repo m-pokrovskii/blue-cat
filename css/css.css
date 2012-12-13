@@ -1,5 +1,134 @@
-/*HELPERS*/
+body {
+	background: #f6f5f2 url("../i/dirt.jpg");
+	color: #230410;
+	font-size: 16px;
+	}
 
+a {
+	color: #4a6b8f;
+	}
+
+h1 {
+	font-size: 32px;
+	font-weight: normal;
+	margin: 10px 0 13px 0;
+	}
+
+.global-container {
+	margin: 0 5%;
+	min-width: 980px;
+	padding: 0 0 84px 0;
+	}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	}
+
+	.sidebar .ui-aside-nav {
+		margin-bottom: 28px;
+		}
+
+	.sidebar__address {
+		width: 132px;
+		padding: 20px 0 0 0;
+		font-size: 12px;
+		text-align: center;
+		}
+
+		.sidebar__address p {
+			margin-bottom: 5px;
+			}
+
+	.sidebar__street {
+		font-family: bingleyitalic;
+		font-size: 14px;
+		}
+
+	.sidebar__phone {
+		margin-top: 15px;
+		}
+
+	.sidebar__location-map-link {
+		color: #a29675;
+		font-family: bingleyitalic;
+		font-size: 14px;
+		}
+
+.content-layout {
+	padding: 17px 0 0 0;
+	margin-left: 20%;
+	}
+
+.content {
+	margin: 0 0 0 0;
+	}
+
+	.content__big-image {
+		border: solid 3px #bfaa8d;
+		width: 100%;
+		}
+
+.content__aside {
+	float: left;
+	width: 177px;
+	margin-top: 21px;
+	text-align: center;
+	}
+
+	.content__aside .ui-scroll {
+		margin: 50px 0 0 0;
+		}
+
+.content__text {
+	margin: 20px 0 0 210px;
+	}
+
+.person__whois {
+	margin: 10px 0 0 0;
+	text-align: center;
+	}
+
+	.person__position {
+		font-family: bingleyitalic;
+		font-size: 16px;
+		}
+
+	.person__name {
+		font-size: 18px;
+		}
+
+	.content__text p {
+		margin-bottom: 25px;
+		}
+
+
+.footer {
+	border-top: solid 1px #bfaa8d;
+	padding: 12px 0 15px 0;
+	font-size: 14px;
+	}
+
+	.footer__content {
+		margin: 0 5%;
+		min-width: 980px;
+		}
+
+	.footer__col {
+		float: left;
+		width: 33%;
+		}
+
+	.footer_col3 .footer__col_col-2 {
+		text-align: center;
+		}
+
+	.footer_col3 .footer__col_col-3 {
+		text-align: right;
+		}
+
+
+/*HELPERS*/
 .ir {
 		background-color: transparent;
 		border: 0;

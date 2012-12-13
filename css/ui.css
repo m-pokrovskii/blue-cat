@@ -30,10 +30,11 @@
 		}
 
 		.ui-aside-nav__menu li {
-			margin: 0 0 14px 0;
+			margin: 0 0 15px 0;
 			}
 
-			.ui-aside-nav__menu li a {
+			.ui-aside-nav__menu li a,
+			.ui-aside-nav__menu li span {
 				display: block;
 				text-align: center;
 				color: #fff;
@@ -41,16 +42,31 @@
 				font-size: 15px;
 				}
 
-				.ui-aside-nav__menu .active {
+				.ui-aside-nav__menu li:hover {
 					border-bottom: solid 1px #2e4969;
+					margin-bottom: 14px;
 					}
 
-					.ui-aside-nav__menu .active a {
+					.ui-aside-nav__menu li:hover a {
 						background: #f1ede2;
 						color: #647e9b;
 						border-left: solid 1px #e6e4db;
 						border-right: solid 1px #e6e4db;
 						}
+
+				.ui-aside-nav__menu .active {
+					border-bottom: solid 1px #2e4969;
+					margin-bottom: 14px;
+					}
+
+				.ui-aside-nav__menu .active span {
+					border-left: solid 1px #e6e4db;
+					border-right: solid 1px #e6e4db;
+					background: #f1ede2;
+					color: #230410;
+					font-family: bingleyitalic;
+					font-size: 16px;
+					}
 
 	.ui-aside-nav .ui-full-logo {
 		margin: 0 0 0 -19px;
@@ -127,6 +143,17 @@
 	background: url(../i/ui-ico-map.png) 0 3px no-repeat;
 	}
 
+	.ui-ico-map_top-centered {
+		padding: 25px 0 0 0;
+		display: inline-block;
+		background: url(../i/ui-ico-map.png) 50% 0 no-repeat;
+		}
+
+.ui-ico-facebook {
+	padding-left: 21px;
+	background: url(../i/ui-ico-facebook.png) 0 2px no-repeat;
+	}
+
 .ui-elem-menu {
 	position: relative;
 	display: inline-block;
@@ -150,6 +177,7 @@
 
 .ui-scroll {
 	position: relative;
+	display: inline-block;
 	overflow: hidden;
 	width: 91px; height: 70px;
 	background: url('../i/ui-scroll.png') 0 0 no-repeat;
@@ -170,6 +198,8 @@
 			}
 
 .ui-photo {
+	display: inline-block;
+	text-align: left;
 	background: url(../i/ui-photo.png) 0 0 no-repeat;
 	width: 131px; height: 204px;
 	}
