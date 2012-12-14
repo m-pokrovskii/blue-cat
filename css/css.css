@@ -2,6 +2,7 @@ body {
 	background: #f6f5f2 url("../i/dirt.jpg");
 	color: #230410;
 	font-size: 16px;
+	min-width: 980px;
 	}
 
 a {
@@ -16,7 +17,6 @@ h1 {
 
 .global-container {
 	margin: 0 5%;
-	min-width: 980px;
 	padding: 0 0 84px 0;
 	}
 
@@ -126,11 +126,19 @@ h1 {
 	.footer__content {
 		margin: 0 5%;
 		min-width: 980px;
+		overflow: hidden;
 		}
 
-	.footer__col {
+	.footer_col3 .footer__col {
 		float: left;
 		width: 33%;
+		}
+
+	.footer_col5 .footer__col {
+		width: 20%;
+		float: left;
+		text-align: center;
+		line-height: 1.7;
 		}
 
 	.footer_col3 .footer__col_col-2 {
@@ -284,6 +292,60 @@ h1 {
 	background: url(../i/cat-path.png) repeat-x;
 	}
 
+
+.header {
+	background: #f6f5f2;
+	}
+
+	.header .ui-aside-nav {
+		position: absolute; left: 0; z-index: 2;
+		}
+
+	.header .ui-lister {
+		position: absolute; left: 154px; top: 12px;
+		}
+
+	.header__content {
+		position: relative;
+		margin: 0 17px 0 5%;
+		min-width: 980px;
+		height: 36px;
+		}
+
+	.header__i-like {
+		margin-top: 6px;
+		float: right;
+		}
+
+.container-slider {
+	position: relative;
+	}
+
+	.container-slider__img-container {
+		position: relative;
+		}
+
+		.container-slider__img-container .ui-caption-img {
+			position: absolute; bottom: 0; width: 100%;
+			}
+
+	.container-slider .banner {
+		position: absolute; top: 29px; right: 0;
+		}
+
+		.container-slider .banner__desc {
+			margin: 10px 0 0 -20px;
+			width: 150px;
+			color: #231f20;
+			font: 14px bingleyitalic;
+			text-align: center;
+			} 
+
+	.container-slider__img-slider {
+		width: 100%;
+		height: auto;
+		display: block;
+		}
 
 /*HELPERS*/
 .ir {

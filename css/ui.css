@@ -117,6 +117,9 @@
 		}
 
 .ui-caption-img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 10px 17px;
 	background: url(../i/overlay-caption-bg.png);
 	overflow: hidden;
