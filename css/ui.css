@@ -210,16 +210,20 @@
 	padding-top: 1px;
 	border-top: solid 2px #bfaa8d;
 	border-bottom: solid 1px #bfaa8d;
-	font-size: 25px;
-	text-transform: uppercase;
-	letter-spacing: 16px;
-	text-align: center;
+	font-size: 32px;
 	}
 
 	.ui-bordered-headline span {
 		display: block;
 		border-top: solid 1px #bfaa8d;
 		padding: 20px 0;
+		}
+
+	.ui-bordered-headline_menu {
+		text-transform: uppercase;
+		letter-spacing: 16px;
+		text-align: center;
+		font-size: 25px;
 		}
 
 .ui-notice {

@@ -90,7 +90,7 @@ h1 {
 		margin: 5px 5px 0 0;
 		}
 
-	.content__text_menu {
+	.content__text_fullsize {
 		margin: 20px 0 0 0;
 		}
 
@@ -108,7 +108,7 @@ h1 {
 		font-size: 18px;
 		}
 
-	.content__text p {
+	.content__text_textpage p {
 		margin-bottom: 25px;
 		}
 
@@ -200,6 +200,26 @@ h1 {
 		float: right;
 		text-align: right;
 		color: #4a6b8f;
+		}
+
+
+.incut-content {
+	border-bottom: solid 1px #bfaa8d;
+	padding: 0 17px 18px 17px;
+	}
+
+.contacts-block {
+	height: 326px;
+	background: url(../i/map.png) 100% 0 no-repeat;
+	padding: 40px 0 0 17px;
+	margin-bottom: 13px;
+	border-bottom: solid 1px #bfaa8d;
+	font-size: 14px;
+
+	}
+
+	.contacts-block p {
+		margin-bottom: 30px;
 		}
 
 /*HELPERS*/
