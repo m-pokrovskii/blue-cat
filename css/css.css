@@ -11,7 +11,7 @@ a {
 h1 {
 	font-size: 32px;
 	font-weight: normal;
-	margin: 10px 0 13px 0;
+	margin: 10px 0 20px 0;
 	}
 
 .global-container {
@@ -27,6 +27,10 @@ h1 {
 
 	.sidebar .ui-aside-nav {
 		margin-bottom: 28px;
+		}
+
+	.sidebar .ui-full-logo {
+		margin-top: 20px;
 		}
 
 	.sidebar__address {
@@ -208,6 +212,58 @@ h1 {
 	padding: 0 17px 18px 17px;
 	}
 
+.nothing-found-block {
+	overflow: hidden;
+	}
+
+	.nothing-found-block__description {
+		font: normal 25px bingleyitalic;
+		color: #383530;
+		padding-top: 15px;
+		margin-left: 340px;
+		}
+
+		.nothing-found-block__description p {
+			margin-bottom: 25px;
+			}
+
+	.nothing-found-block__headline {		
+		text-align: center;
+		width: 280px;
+		float: left;
+		margin-right: 60px;
+		color: #3b3b3b;
+		}
+
+		.nothing-found-block__headline h2 {
+			font: normal 182px bingleyitalic;
+			margin: -35px 0 -40px 0;
+			}
+
+
+		.nothing-found-block__headline span {
+			font-size: 21px;
+			letter-spacing: 24px;
+			margin-right: -24px;
+			text-transform: uppercase;
+			}
+
+.nothing-found-footer {
+	margin: 20px 0 0 0;
+	padding: 10px 0;
+	border-top: solid 1px #bfaa8d;
+	border-bottom: solid 1px #bfaa8d;
+	overflow: hidden;
+	}
+
+	.nothing-found-footer__email {
+		float: left;
+		}
+
+	.nothing-found-footer__phone {
+		float: right;
+		}
+
 .contacts-block {
 	height: 326px;
 	background: url(../i/map.png) 100% 0 no-repeat;
@@ -221,6 +277,13 @@ h1 {
 	.contacts-block p {
 		margin-bottom: 30px;
 		}
+
+.cat-path {
+	margin-top: 70px;
+	height: 76px;
+	background: url(../i/cat-path.png) repeat-x;
+	}
+
 
 /*HELPERS*/
 .ir {
