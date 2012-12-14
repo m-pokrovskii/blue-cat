@@ -84,6 +84,16 @@ h1 {
 	margin: 20px 0 0 210px;
 	}
 
+
+	.content__text .ui-notice {
+		text-align: right;
+		margin: 5px 5px 0 0;
+		}
+
+	.content__text_menu {
+		margin: 20px 0 0 0;
+		}
+
 .person__whois {
 	margin: 10px 0 0 0;
 	text-align: center;
@@ -127,6 +137,70 @@ h1 {
 		text-align: right;
 		}
 
+
+.menu-block {
+	border-bottom: solid 2px #BFAA8D;
+	padding-bottom: 1px;
+	}
+
+	.menu-wrap {
+		padding-bottom: 8px;
+		border-bottom: solid 1px #BFAA8D;
+		}
+
+.menu-list {
+	text-align: justify;
+	font-size: 0;
+	}
+
+	.menu-list li {
+		font-size: 16px;
+		display: inline-block;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		}
+
+		.menu-list a {
+			color: #231f20;
+			}
+
+.menu-items {
+	margin: 31px 47px 0 20px;
+	}
+
+	.menu-items__item {
+		float: left;
+		width: 90%;
+		}
+
+		.menu-items li {
+			overflow: hidden;
+			margin-top: 48px;
+			}
+
+		.menu-items li:first-child {
+			margin-top: 0;
+			}
+
+		.menu-items__title {
+			color: #434242;
+			margin-bottom: 3px;
+			font-size: 16px;
+			font-weight: normal;
+			}
+
+		.menu-items__description {
+			font-family: bingleyitalic;
+			color: #655641;
+			font-size: 14px;
+			}
+
+	.menu-items__cost {
+		width: 10%;
+		float: right;
+		text-align: right;
+		color: #4a6b8f;
+		}
 
 /*HELPERS*/
 .ir {
