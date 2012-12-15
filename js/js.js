@@ -63,7 +63,7 @@ function slideSwitchForth() {
 	$active.fadeOut(1000,function() {
 		$(this).removeClass('showed');
 	});
-	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
+	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($next.data('position'));
 }
 
@@ -73,7 +73,7 @@ function slideSwitchBack() {
 	$active.fadeOut(1000, function() {
 		$(this).removeClass('showed');
 	});
-	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
+	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($prev.data('position'));
 }
 
