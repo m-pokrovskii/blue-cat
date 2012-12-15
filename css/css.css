@@ -321,6 +321,11 @@ h1 {
 	position: relative;
 	}
 
+	.container-slider__slide {
+		position: relative;
+		display: none;
+		}
+
 	.container-slider__img-container {
 		position: relative;
 		}
@@ -366,6 +371,12 @@ h1 {
 .hidden {
 		display: none !important;
 		visibility: hidden;
+}
+
+
+.showed {
+		display: block !important;
+		visibility: visible;
 }
 
 .invisible {
