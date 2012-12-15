@@ -352,6 +352,42 @@ h1 {
 		display: block;
 		}
 
+.ui-loader-img {
+	position: absolute; left: 5%; top: 86px; z-index: 10;
+	margin-left: 25px;
+	width: 80px; height: 34px;
+	background: url(../i/ui-loader-img.png) 0 0 no-repeat;
+	}
+
+
+.popup {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: fixed; top:50%; left: 50%; margin-top: -330px; margin-left: -267px;
+	width: 533px; height: 660px;
+	background: url(../i/popUp.png) 0 0 no-repeat;
+	font-size: 14px;
+	display: none;
+	}
+
+	.popup_close {
+		position: absolute; right: 56px; top: 41px;
+		width: 24px; height: 24px;
+		background: url(../i/close.png) 0 0 no-repeat;
+		}
+
+	.popup_content {
+		margin: 65px 80px;
+		height: 490px;
+		overflow: auto;
+		}
+
+	.popup p {
+		margin-bottom: 10px;
+		}
+
 /*HELPERS*/
 .ir {
 		background-color: transparent;

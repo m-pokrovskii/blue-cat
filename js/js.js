@@ -1,8 +1,16 @@
 jQuery(document).ready(function($) {
+	var $catPath = $('.cat-path');
+	var $widthCatPath = $catPath.width();
+	$catPath.width("0");
+	var $startWitdh = 51;                    
+
+	increseWidth();
+
 
 	setupPositionSlide();
+	// loader();
 
-	var slides = $('.container-slider__slide');
+	
 	$('.ui-sr-arrow').click(function(e) {
 		slideSwitchForth();
 		e.preventDefault();
@@ -12,6 +20,37 @@ jQuery(document).ready(function($) {
 		slideSwitchBack();
 		e.preventDefault();
 	});
+
+	$('.ui-scroll a').click(function(e) {
+		$('.popup').fadeIn();
+		e.preventDefault();
+	});
+
+	$('.popup_close').click(function(e) {
+		$('.popup').fadeOut();
+		e.preventDefault();
+	});
+
+// function loader () {
+// 	$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
+// 	$('body').prepend('<div class="ui-loader-img"></div>')
+// 	$('#showMeNow').hide().delay(1000).fadeIn('slow', function() {
+// 		$('.header, .container-slider, .footer').unwrap();
+// 		$('.ui-loader-img').fadeOut();
+// 	});
+// }
+
+function increseWidth () {     
+   setTimeout(function () {    
+      $catPath.width($startWitdh);
+      $startWitdh=$startWitdh+25;                     
+      if ($startWitdh < $widthCatPath) {            
+         increseWidth();       
+      } else	{
+      	$catPath.width("100%");
+      }                       
+   }, 300)
+}
 
 function setupPositionSlide () {
 	var $allSlides = $('.container-slider__slide');

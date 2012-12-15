@@ -10,6 +10,19 @@
 	<meta name="description" content="">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/js.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			function loader () {
+				$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
+				$('body').prepend('<div class="ui-loader-img"></div>')
+				$('#showMeNow').hide().delay(1000).fadeIn('slow', function() {
+					$('.header, .container-slider, .footer').unwrap();
+					$('.ui-loader-img').fadeOut();
+				});
+			}
+			loader();
+		});
+	</script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/css.css">
 	<link rel="stylesheet" href="css/fonts.css">
