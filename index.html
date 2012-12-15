@@ -11,17 +11,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/js.js"></script>
 	<script>
-		jQuery(document).ready(function($) {
-			function loader () {
-				$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
-				$('body').prepend('<div class="ui-loader-img"></div>')
-				$('#showMeNow').hide().delay(1000).fadeIn('slow', function() {
-					$('.header, .container-slider, .footer').unwrap();
-					$('.ui-loader-img').fadeOut();
-				});
-			}
-			loader();
+		$(window).load(function() {
+			$('#showMeNow').delay(1000).fadeIn('slow', function() {
+				$('.header, .container-slider, .footer').unwrap();
+				$('.ui-loader-img').fadeOut();
+				})
 		});
+
+		jQuery(document).ready(function($) {
+			$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
+			$('body').prepend('<div class="ui-loader-img"></div>');
+		});
+		
 	</script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/css.css">
@@ -54,7 +55,8 @@
 	<div class="container-slider">
 		<div class="container-slider__img-container">
 			<div class="container-slider__slide showed">
-				<img class="container-slider__img-slider" src="i/img-slider.jpg" alt="">
+				<!-- <img class="container-slider__img-slider" src="i/img-slider.jpg" alt=""> -->
+				<img class="container-slider__img-slider" src="http://gurman-nk.ru/wp-content/uploads/2012/11/plate-of-food1.jpg" alt="">
 				<div class="ui-caption-img">
 					<p class="ui-caption-img__title">
 						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"

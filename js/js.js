@@ -8,8 +8,6 @@ jQuery(document).ready(function($) {
 
 
 	setupPositionSlide();
-	// loader();
-
 	
 	$('.ui-sr-arrow').click(function(e) {
 		slideSwitchForth();
@@ -31,14 +29,6 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 	});
 
-// function loader () {
-// 	$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
-// 	$('body').prepend('<div class="ui-loader-img"></div>')
-// 	$('#showMeNow').hide().delay(1000).fadeIn('slow', function() {
-// 		$('.header, .container-slider, .footer').unwrap();
-// 		$('.ui-loader-img').fadeOut();
-// 	});
-// }
 
 function increseWidth () {     
    setTimeout(function () {    
@@ -70,21 +60,21 @@ function countSlide ($currentPosition) {
 function slideSwitchForth() {
   var $active = $('.container-slider__slide.showed');
   var $next =  $active.next().length ? $active.next() : $('.container-slider__slide:first');
-	$active.fadeOut(function() {
+	$active.fadeOut(1000,function() {
 		$(this).removeClass('showed');
-		$next.fadeIn().addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
-		countSlide($next.data('position'));
 	});
+	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
+	countSlide($next.data('position'));
 }
 
 function slideSwitchBack() {
   var $active = $('.container-slider__slide.showed');
   var $prev =  $active.prev().length ? $active.prev() : $('.container-slider__slide:last');
-	$active.fadeOut(function() {
+	$active.fadeOut(1000, function() {
 		$(this).removeClass('showed');
-		$prev.fadeIn().addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
-		countSlide($prev.data('position'));
 	});
+	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(200).slideDown();
+	countSlide($prev.data('position'));
 }
 
 
