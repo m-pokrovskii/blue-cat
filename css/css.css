@@ -71,6 +71,7 @@ h1 {
 	.content__big-image {
 		border: solid 3px #bfaa8d;
 		width: 100%;
+		max-width:700px;
 		}
 
 .content__aside {
@@ -319,11 +320,13 @@ h1 {
 
 .container-slider {
 	position: relative;
+	overflow: hidden;
 	}
 
 	.container-slider__slide {
 		position: relative;
 		display: none;
+		height: 675px;
 		}
 
 	.container-slider__img-container {
