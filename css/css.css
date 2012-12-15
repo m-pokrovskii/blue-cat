@@ -368,7 +368,7 @@ h1 {
 	position: fixed; top:50%; left: 50%; margin-top: -330px; margin-left: -267px;
 	width: 533px; height: 660px;
 	background: url(../i/popUp.png) 0 0 no-repeat;
-	font-size: 14px;
+	font-size: 13px;
 	display: none;
 	}
 
@@ -380,7 +380,7 @@ h1 {
 
 	.popup_content {
 		margin: 65px 80px;
-		height: 490px;
+		height: 500px;
 		overflow: auto;
 		}
 
