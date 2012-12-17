@@ -44,7 +44,7 @@
 
 				.ui-aside-nav__menu li:hover {
 					border-bottom: solid 1px #2e4969;
-					margin-bottom: 12px;
+					margin-bottom: 11px;
 					}
 
 					.ui-aside-nav__menu li:hover a {
@@ -56,7 +56,7 @@
 
 				.ui-aside-nav__menu .active {
 					border-bottom: solid 1px #2e4969;
-					margin-bottom: 12px;
+					margin-bottom: 11px;
 					}
 
 				.ui-aside-nav__menu .active span {
