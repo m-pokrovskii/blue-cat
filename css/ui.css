@@ -9,7 +9,7 @@
 .ui-aside-nav {
 	position: relative;
 	width: 132px;
-	padding: 38px 0 52px 0;
+	padding: 38px 0 32px 0;
 	background: url(../i/aside-nav-bg.png) repeat-y 0 0;
 	}
 
@@ -26,11 +26,11 @@
 		}
 
 	.ui-aside-nav__menu {
-		margin: 32px 5px 0 5px;
+		margin: 31px 5px 0 5px;
 		}
 
 		.ui-aside-nav__menu li {
-			margin: 0 0 15px 0;
+			margin: 0 0 12px 0;
 			}
 
 			.ui-aside-nav__menu li a,
@@ -44,7 +44,7 @@
 
 				.ui-aside-nav__menu li:hover {
 					border-bottom: solid 1px #2e4969;
-					margin-bottom: 14px;
+					margin-bottom: 12px;
 					}
 
 					.ui-aside-nav__menu li:hover a {
@@ -56,7 +56,7 @@
 
 				.ui-aside-nav__menu .active {
 					border-bottom: solid 1px #2e4969;
-					margin-bottom: 14px;
+					margin-bottom: 12px;
 					}
 
 				.ui-aside-nav__menu .active span {
@@ -214,12 +214,14 @@
 	border-top: solid 2px #bfaa8d;
 	border-bottom: solid 1px #bfaa8d;
 	font-size: 32px;
+	margin: 10px 0 14px 0;
 	}
 
 	.ui-bordered-headline span {
 		display: block;
 		border-top: solid 1px #bfaa8d;
-		padding: 15px 17px;
+		padding: 12px 15px 17px 15px;
+		line-height: 1;
 		}
 
 	.ui-bordered-headline_menu {
@@ -228,6 +230,17 @@
 		text-align: center;
 		font-size: 25px;
 		}
+
+	.ui-bordered-headline_404 {
+		margin: 39px 0 14px 0;
+		}
+
+		.ui-bordered-headline_menu span {
+			display: block;
+			border-top: solid 1px #bfaa8d;
+			padding: 15px 17px;		
+			line-height: normal;	
+			}
 
 .ui-notice {
 	font-size: 11px;

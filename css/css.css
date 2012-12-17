@@ -12,7 +12,7 @@ a {
 h1 {
 	font-size: 32px;
 	font-weight: normal;
-	margin: 10px 0 20px 0;
+	margin: 22px 0 19px 0;
 	}
 
 .global-container {
@@ -42,7 +42,7 @@ h1 {
 		}
 
 		.sidebar__address p {
-			margin-bottom: 5px;
+			margin-bottom: 3px;
 			}
 
 	.sidebar__street {
@@ -51,7 +51,7 @@ h1 {
 		}
 
 	.sidebar__phone {
-		margin-top: 15px;
+		margin-top: 10px;
 		}
 
 	.sidebar__location-map-link {
@@ -61,7 +61,7 @@ h1 {
 		}
 
 .content-layout {
-	padding: 17px 0 0 0;
+	margin: 17px 0 0 0;
 	margin-left: 20%;
 	}
 
@@ -88,7 +88,7 @@ h1 {
 		}
 
 .content__text {
-	margin: 20px 0 0 210px;
+	margin: 27px 0 0 210px;
 	}
 
 
@@ -98,7 +98,7 @@ h1 {
 		}
 
 	.content__text_fullsize {
-		margin: 20px 0 0 0;
+		margin: 14px 0 0 0;
 		}
 
 .person__whois {
@@ -128,7 +128,6 @@ h1 {
 
 	.footer__content {
 		margin: 0 5%;
-		min-width: 980px;
 		overflow: hidden;
 		}
 
@@ -172,7 +171,7 @@ h1 {
 		font-size: 16px;
 		display: inline-block;
 		margin-right: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 		}
 
 		.menu-list a {
@@ -180,7 +179,7 @@ h1 {
 			}
 
 .menu-items {
-	margin: 31px 47px 0 20px;
+	margin: 20px 47px 0 20px;
 	}
 
 	.menu-items__item {
@@ -190,7 +189,7 @@ h1 {
 
 		.menu-items li {
 			overflow: hidden;
-			margin-top: 48px;
+			margin-top: 45px;
 			}
 
 		.menu-items li:first-child {
@@ -199,7 +198,6 @@ h1 {
 
 		.menu-items__title {
 			color: #434242;
-			margin-bottom: 3px;
 			font-size: 16px;
 			font-weight: normal;
 			}
@@ -220,18 +218,20 @@ h1 {
 
 .incut-content {
 	border-bottom: solid 1px #bfaa8d;
-	padding: 0 17px 18px 17px;
+	padding: 0 17px 20px 17px;
+	line-height: 1.4;
 	}
 
 .nothing-found-block {
 	overflow: hidden;
+	margin-top: 20px;
 	}
 
 	.nothing-found-block__description {
 		font: normal 25px bingleyitalic;
 		color: #383530;
 		padding-top: 15px;
-		margin-left: 340px;
+		margin-left: 330px;
 		}
 
 		.nothing-found-block__description p {
@@ -242,7 +242,7 @@ h1 {
 		text-align: center;
 		width: 280px;
 		float: left;
-		margin-right: 60px;
+		margin-left: -10px;
 		color: #3b3b3b;
 		}
 
@@ -261,7 +261,7 @@ h1 {
 
 .nothing-found-footer {
 	margin: 20px 0 0 0;
-	padding: 10px 0;
+	padding: 13px 0 7px 0;
 	border-top: solid 1px #bfaa8d;
 	border-bottom: solid 1px #bfaa8d;
 	overflow: hidden;
@@ -311,8 +311,8 @@ h1 {
 
 	.header__content {
 		position: relative;
-		margin: 0 17px 0 5%;
-		min-width: 980px;
+		margin: 0 0 0 5%;
+		padding-right: 17px;
 		height: 36px;
 		}
 
