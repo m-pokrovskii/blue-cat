@@ -3,9 +3,8 @@ jQuery(document).ready(function($) {
 	var $widthCatPath = $catPath.width();
 	$catPath.width("0");
 	var $startWitdh = 51;                    
-
+	startSlideshow();
 	increseWidth();
-
 
 	setupPositionSlide();
 	
@@ -29,6 +28,10 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 	});
 
+
+function startSlideshow () {
+	slideshow = setInterval(slideSwitchForth, 5000);
+}
 
 function increseWidth () {     
    setTimeout(function () {    
@@ -65,6 +68,8 @@ function slideSwitchForth() {
 	});
 	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($next.data('position'));
+	clearInterval(slideshow);
+	startSlideshow();
 }
 
 function slideSwitchBack() {

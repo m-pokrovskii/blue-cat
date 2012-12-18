@@ -8,7 +8,10 @@
 
 .ui-aside-nav {
 	position: relative;
-	width: 132px;
+	width: 132px; height: 429px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 38px 0 32px 0;
 	background: url(../i/aside-nav-bg.png) repeat-y 0 0;
 	}
@@ -107,6 +110,10 @@
 	display: inline-block;
 	width: 16px; height: 12px;
 	}
+
+	.ui-sr-arrow {
+		width: 18px;
+		}
 
 	.ui-sl-arrow {
 		background: url(../i/ui-sl-arrow.png) 0 0 no-repeat;

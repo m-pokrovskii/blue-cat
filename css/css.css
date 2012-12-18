@@ -1,13 +1,22 @@
+html {
+	height: 100%;
+	}
+
 body {
 	background: #f6f5f2 url("../i/dirt.jpg");
 	color: #230410;
 	font-size: 16px;
 	min-width: 980px;
+	min-height:100%;
 	}
 
 a {
 	color: #4a6b8f;
 	}
+
+	a:hover {
+		color: #230410;
+		}
 
 h1 {
 	font-size: 32px;
@@ -126,19 +135,25 @@ h1 {
 	font-size: 14px;
 	}
 
+	.footer_home {
+		}
+
+	.footer__col {
+		float: left;
+		white-space: nowrap;
+		}
+
 	.footer__content {
 		margin: 0 5%;
 		overflow: hidden;
 		}
 
 	.footer_col3 .footer__col {
-		float: left;
 		width: 33%;
 		}
 
 	.footer_col5 .footer__col {
 		width: 20%;
-		float: left;
 		text-align: center;
 		line-height: 1.7;
 		}
@@ -163,7 +178,6 @@ h1 {
 		}
 
 .menu-list {
-	text-align: justify;
 	font-size: 0;
 	}
 
@@ -171,7 +185,8 @@ h1 {
 		font-size: 16px;
 		display: inline-block;
 		margin-right: 10px;
-		margin-bottom: 7px;
+		height: 38px;
+		line-height: 38px;
 		}
 
 		.menu-list a {
@@ -365,6 +380,7 @@ h1 {
 	margin-left: 25px;
 	width: 80px; height: 34px;
 	background: url(../i/ui-loader-img.png) 0 0 no-repeat;
+	display: none;
 	}
 
 

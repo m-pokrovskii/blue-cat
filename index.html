@@ -12,15 +12,16 @@
 	<script src="js/js.js"></script>
 	<script>
 		$(window).load(function() {
-			$('#showMeNow').delay(1000).fadeIn('slow', function() {
-				$('.header, .container-slider, .footer').unwrap();
-				$('.ui-loader-img').fadeOut();
-				})
+				$('#showMeNow').delay(1000).fadeIn('slow', function() {
+					$('.header, .container-slider, .footer').unwrap();
+					$('.ui-loader-img').fadeOut();
+					})
 		});
 
 		jQuery(document).ready(function($) {
 			$('.header, .container-slider, .footer').wrapAll('<div id="showMeNow"></div>');
 			$('body').prepend('<div class="ui-loader-img"></div>');
+			$('.ui-loader-img').fadeIn(1000);
 		});
 		
 	</script>
@@ -30,6 +31,16 @@
 	<link rel="stylesheet" href="css/ui.css">
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=101464506623970";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="header">
 		<div class="header__content">
 			<div class="ui-aside-nav">
@@ -48,7 +59,7 @@
 				<span class="ui-lister__count">1/19</span>
 			</div>
 			<div class="header__i-like">
-				<img src="i/tmp/tmp-i-like.png" alt="">
+				<div class="fb-like" data-href="http://markuper.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
 			</div>
 		</div>
 	</div>
@@ -93,14 +104,14 @@
 			</p>
 		</div>
 	</div>
-	<div class="footer footer_col5">
+	<div class="footer footer_home footer_col5">
 		<div class="footer__content">
 			<div class="footer__col footer__col_col-1">
 				Мы работаем ежедневно <br>
 				с 12:00 до 24:00
 			</div>
 			<div class="footer__col footer__col_col-2">
-				+7 495 627-07-08
+				+7 495 627-07-08<br>
 				<a href="mailto:hello@siniykot.com">hello@siniykot.com</a>
 			</div>
 			<div class="footer__col footer__col_col-3">
