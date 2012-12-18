@@ -15,12 +15,12 @@
 	$(window).resize(function() {
 		var $windowHeight = $(window).height();
 		if ($windowHeight > 786) {
-			var $headerHeight = $('.header').height();
-			var $footerHeight = $('.footer').height();
+			var $headerHeight = $('.header').innerHeight();
+			var $footerHeight = $('.footer').innerHeight();
 			var $slideHeight = $windowHeight - ($headerHeight+$footerHeight);
-			$('.container-slider, .container-slider__slide').height($slideHeight);
+			$('.container-slider__slide').height($slideHeight);
 		} else {
-			$('.container-slider, .container-slider__slide').height('675');
+			$('.container-slider__slide').height('675');
 		};
 	});
 
@@ -54,95 +54,90 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
- -->	<div class="header">
-		<div class="header__content">
-			<div class="ui-aside-nav">
-				<div class="ui-aside-nav__shadow"></div>
-				<a href="#" class="ui-full-logo ir">Синий Кот</a>
-				<ul class="ui-aside-nav__menu">
-					<li><a href="#">О ресторане</a></li>
-					<li class="active"><span>Меню</span></li>
-					<li><a href="#">Винная карта</a></li>
-				</ul>
-				<div class="ui-aside-nav__bottom-bg"></div>
-			</div>
-			<div class="ui-lister">
-				<a href="#" class="ui-sl-arrow"></a>
-				<a href="#" class="ui-sr-arrow"></a>
-				<span class="ui-lister__count">1/19</span>
-			</div>
-			<div class="header__i-like">
-				<div class="fb-like" data-href="http://markuper.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-			</div>
-		</div>
-	</div>
-	<div class="container-slider">
-		<div class="container-slider__img-container">
-			<div class="container-slider__slide showed">
-				<div class="container-slider__wrap-img">
-					<img class="container-slider__img-slider" src="i/img-slider.jpg" alt="">
+ -->	
+	<div class="header">
+			<div class="header__content">
+				<div class="ui-aside-nav">
+					<div class="ui-aside-nav__shadow"></div>
+					<a href="#" class="ui-full-logo ir">Синий Кот</a>
+					<ul class="ui-aside-nav__menu">
+						<li><a href="#">О ресторане</a></li>
+						<li class="active"><span>Меню</span></li>
+						<li><a href="#">Винная карта</a></li>
+					</ul>
+					<div class="ui-aside-nav__bottom-bg"></div>
 				</div>
-				<div class="ui-caption-img">
-					<p class="ui-caption-img__title">
-						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
-					</p>
-					<p class="ui-caption-img__cost">350 руб.</p>
+				<div class="ui-lister">
+					<a href="#" class="ui-sl-arrow"></a>
+					<a href="#" class="ui-sr-arrow"></a>
+					<span class="ui-lister__count">1/19</span>
 				</div>
-			</div>
-			<div class="container-slider__slide">
-				<div class="container-slider__wrap-img">
-					<img class="container-slider__img-slider" src="i/img-slider2.jpg" alt="">
-				</div>
-				<div class="ui-caption-img">
-					<p class="ui-caption-img__title">
-						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
-					</p>
-					<p class="ui-caption-img__cost">350 руб.</p>
-				</div>
-			</div>
-			<div class="container-slider__slide">
-				<div class="container-slider__wrap-img">
-					<img class="container-slider__img-slider" src="i/img-slider3.jpg" alt="">
-				</div>
-				<div class="ui-caption-img">
-					<p class="ui-caption-img__title">
-						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
-					</p>
-					<p class="ui-caption-img__cost">350 руб.</p>
+				<div class="header__i-like">
+					<div class="fb-like" data-href="http://markuper.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
 				</div>
 			</div>
 		</div>
-		<div class="banner">
-			<div class="ui-banner-flag">
-				<a href="#"><img src="i/tmp/banner-img.png" alt=""></a>
+		<div class="container-slider">
+			<div class="container-slider__img-container">
+				<div class="container-slider__slide showed">
+						<img class="container-slider__img-slider" src="i/img-slider.jpg" alt="">
+					<div class="ui-caption-img">
+						<p class="ui-caption-img__title">
+							Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
+						</p>
+						<p class="ui-caption-img__cost">350 руб.</p>
+					</div>
+				</div>
+				<div class="container-slider__slide">
+						<img class="container-slider__img-slider" src="i/img-slider2.jpg" alt="">
+					<div class="ui-caption-img">
+						<p class="ui-caption-img__title">
+							Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
+						</p>
+						<p class="ui-caption-img__cost">350 руб.</p>
+					</div>
+				</div>
+				<div class="container-slider__slide">
+						<img class="container-slider__img-slider" src="i/img-slider3.jpg" alt="">
+					<div class="ui-caption-img">
+						<p class="ui-caption-img__title">
+							Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
+						</p>
+						<p class="ui-caption-img__cost">350 руб.</p>
+					</div>
+				</div>
 			</div>
-			<p class="banner__desc">
-				Праздник молодого вина
-				с 17 по 18 ноября!
-			</p>
+			<div class="banner">
+				<div class="ui-banner-flag">
+					<a href="#"><img src="i/tmp/banner-img.png" alt=""></a>
+				</div>
+				<p class="banner__desc">
+					Праздник молодого вина
+					с 17 по 18 ноября!
+				</p>
+			</div>
 		</div>
-	</div>
-	<div class="footer footer_home footer_col5">
-		<div class="footer__content">
-			<div class="footer__col footer__col_col-1">
-				Мы работаем ежедневно <br>
-				с 12:00 до 24:00
-			</div>
-			<div class="footer__col footer__col_col-2">
-				+7 495 627-07-08<br>
-				<a href="mailto:hello@siniykot.com">hello@siniykot.com</a>
-			</div>
-			<div class="footer__col footer__col_col-3">
-				<a href="#">Большой Черкасский пер., 15</a><br>
-				<a class="ui-ico-map" href="#">Cхема проезда</a>
-			</div>
-			<div class="footer__col footer__col_col-4">
-				<a class="ui-ico-facebook" href="#">Фейсбук</a><br>
-			</div>
-			<div class="footer__col footer__col_col-5">
-				<a href="#"><img src="i/creator.png" alt=""></a>
+		<div class="footer footer_home footer_col5">
+			<div class="footer__content">
+				<div class="footer__col footer__col_col-1">
+					Мы работаем ежедневно <br>
+					с 12:00 до 24:00
+				</div>
+				<div class="footer__col footer__col_col-2">
+					+7 495 627-07-08<br>
+					<a href="mailto:hello@siniykot.com">hello@siniykot.com</a>
+				</div>
+				<div class="footer__col footer__col_col-3">
+					<a href="#">Большой Черкасский пер., 15</a><br>
+					<a class="ui-ico-map" href="#">Cхема проезда</a>
+				</div>
+				<div class="footer__col footer__col_col-4">
+					<a class="ui-ico-facebook" href="#">Фейсбук</a><br>
+				</div>
+				<div class="footer__col footer__col_col-5">
+					<a href="#"><img src="i/creator.png" alt=""></a>
+				</div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>
