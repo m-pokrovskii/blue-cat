@@ -11,6 +11,19 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="js/js.js"></script>
 	<script>
+
+	$(window).resize(function() {
+		var $windowHeight = $(window).height();
+		if ($windowHeight > 786) {
+			var $headerHeight = $('.header').height();
+			var $footerHeight = $('.footer').height();
+			var $slideHeight = $windowHeight - ($headerHeight+$footerHeight);
+			$('.container-slider, .container-slider__slide').height($slideHeight);
+		} else {
+			$('.container-slider, .container-slider__slide').height('675');
+		};
+	});
+
 		$(window).load(function() {
 				$('#showMeNow').delay(1000).fadeIn('slow', function() {
 					$('.header, .container-slider, .footer').unwrap();
@@ -31,7 +44,7 @@
 	<link rel="stylesheet" href="css/ui.css">
 </head>
 <body>
-
+<!-- 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -41,7 +54,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-	<div class="header">
+ -->	<div class="header">
 		<div class="header__content">
 			<div class="ui-aside-nav">
 				<div class="ui-aside-nav__shadow"></div>
@@ -66,8 +79,9 @@
 	<div class="container-slider">
 		<div class="container-slider__img-container">
 			<div class="container-slider__slide showed">
-				<img class="container-slider__img-slider" src="i/img-slider.jpg" alt="">
-				<!-- <img class="container-slider__img-slider" src="http://gurman-nk.ru/wp-content/uploads/2012/11/plate-of-food1.jpg" alt=""> -->
+				<div class="container-slider__wrap-img">
+					<img class="container-slider__img-slider" src="i/img-slider.jpg" alt="">
+				</div>
 				<div class="ui-caption-img">
 					<p class="ui-caption-img__title">
 						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
@@ -76,7 +90,9 @@
 				</div>
 			</div>
 			<div class="container-slider__slide">
-				<img class="container-slider__img-slider" src="i/img-slider2.jpg" alt="">
+				<div class="container-slider__wrap-img">
+					<img class="container-slider__img-slider" src="i/img-slider2.jpg" alt="">
+				</div>
 				<div class="ui-caption-img">
 					<p class="ui-caption-img__title">
 						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"
@@ -85,7 +101,9 @@
 				</div>
 			</div>
 			<div class="container-slider__slide">
-				<img class="container-slider__img-slider" src="i/img-slider3.jpg" alt="">
+				<div class="container-slider__wrap-img">
+					<img class="container-slider__img-slider" src="i/img-slider3.jpg" alt="">
+				</div>
 				<div class="ui-caption-img">
 					<p class="ui-caption-img__title">
 						Салат с крабами и муссом из морских гребешков, с томатами, авокадо и соусом "Блючиз"

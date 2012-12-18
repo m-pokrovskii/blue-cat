@@ -2,11 +2,14 @@ jQuery(document).ready(function($) {
 	var $catPath = $('.cat-path');
 	var $widthCatPath = $catPath.width();
 	var isSlideAnim = false;
-	$catPath.width("0");
 	var $startWitdh = 51;                    
+
+	$(window).trigger('resize');
+	
+	$catPath.width("0");
+	
 	startSlideshow();
 	increseWidth();
-
 
 	setupPositionSlide();
 	
