@@ -9,6 +9,7 @@ body {
 	font-size: 16px;
 	min-width: 980px;
 	min-height:100%;
+	border-bottom: solid 1px #F6F5F2;
 	}
 
 a {
@@ -342,10 +343,16 @@ h1 {
 		}
 
 .container-slider {
-	position: relative; bottom: 74px; top: 0;
+	position: relative;
 	overflow: hidden;
 	height: 675px;
+	margin-bottom: 74px;
 	}
+
+	.container-slider__img-container {
+		margin-bottom: 74px;
+		height: 675px;
+		}
 
 	.container-slider__slide {
 		position: absolute; top: 0; left: 0;
