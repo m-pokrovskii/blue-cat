@@ -3,6 +3,7 @@ html {
 	}
 
 body {
+	position: relative;
 	background: #f6f5f2 url("../i/dirt.jpg");
 	color: #230410;
 	font-size: 16px;
@@ -136,6 +137,10 @@ h1 {
 	}
 
 	.footer_home {
+		position: absolute; width: 100%; bottom: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 		}
 
 	.footer__col {
@@ -337,7 +342,7 @@ h1 {
 		}
 
 .container-slider {
-	position: relative;
+	position: relative; bottom: 74px;
 	overflow: hidden;
 	height: 675px;
 	}
