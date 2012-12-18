@@ -1,10 +1,12 @@
 jQuery(document).ready(function($) {
 	var $catPath = $('.cat-path');
 	var $widthCatPath = $catPath.width();
+	var isSlideAnim = false;
 	$catPath.width("0");
 	var $startWitdh = 51;                    
 	startSlideshow();
 	increseWidth();
+
 
 	setupPositionSlide();
 	
@@ -61,10 +63,14 @@ function countSlide ($currentPosition) {
 }
 
 function slideSwitchForth() {
+	if(isSlideAnim) { return; }
+  isSlideAnim = true;
+
   var $active = $('.container-slider__slide.showed');
   var $next =  $active.next().length ? $active.next() : $('.container-slider__slide:first');
 	$active.fadeOut(1000,function() {
 		$(this).removeClass('showed');
+		isSlideAnim = false;
 	});
 	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($next.data('position'));
@@ -73,10 +79,16 @@ function slideSwitchForth() {
 }
 
 function slideSwitchBack() {
+
+	if(isSlideAnim) { return; }
+  isSlideAnim = true;
+
+
   var $active = $('.container-slider__slide.showed');
   var $prev =  $active.prev().length ? $active.prev() : $('.container-slider__slide:last');
 	$active.fadeOut(1000, function() {
 		$(this).removeClass('showed');
+		isSlideAnim = false;
 	});
 	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($prev.data('position'));

@@ -342,7 +342,7 @@ h1 {
 		}
 
 .container-slider {
-	position: relative; bottom: 74px;
+	position: relative; bottom: 74px; top: 0;
 	overflow: hidden;
 	height: 675px;
 	}
