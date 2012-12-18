@@ -346,6 +346,7 @@ h1 {
 	position: relative;
 	margin-bottom: 74px;
 	height: 675px;
+	overflow: hidden;
 	}
 
 	.container-slider__slide {
@@ -354,11 +355,11 @@ h1 {
 		width: 100%;
 		}
 
-		.container-slider__wrap-img {
+/*		.container-slider__wrap-img {
 			overflow: hidden;
 			height: 675px;	
 			}
-
+*/
 	.container-slider__img-container {
 		position: relative;
 		}
