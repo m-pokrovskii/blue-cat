@@ -195,6 +195,10 @@ h1 {
 		line-height: 38px;
 		}
 
+		.menu-list li:first-child a {
+			margin-left: 0;
+			}
+
 		.menu-list a {
 			color: #231f20;
 			}
