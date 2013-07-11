@@ -170,7 +170,9 @@
 	height: 38px;
 	line-height: 38px;
 	background: url(../i/menu-li-bg.png) 100% 0 no-repeat;	
+	margin-left: 10px;
 	}
+
 
 	.ui-elem-menu span {
 		position: relative; left: -10px;

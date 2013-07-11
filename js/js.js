@@ -2,11 +2,14 @@ jQuery(document).ready(function($) {
 	var $catPath = $('.cat-path');
 	var $widthCatPath = $catPath.width();
 	var isSlideAnim = false;
-	$catPath.width("0");
 	var $startWitdh = 51;                    
+
+	$(window).trigger('resize');
+	
+	$catPath.width("0");
+	
 	startSlideshow();
 	increseWidth();
-
 
 	setupPositionSlide();
 	
@@ -72,7 +75,7 @@ function slideSwitchForth() {
 		$(this).removeClass('showed');
 		isSlideAnim = false;
 	});
-	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
+	$next.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown(function(){isSlideAnim = false;});
 	countSlide($next.data('position'));
 	clearInterval(slideshow);
 	startSlideshow();
@@ -87,7 +90,7 @@ function slideSwitchBack() {
 		$(this).removeClass('showed');
 		isSlideAnim = false;
 	});
-	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
+	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown(function(){isSlideAnim = false;});
 	countSlide($prev.data('position'));
 }
 });
