@@ -79,11 +79,8 @@ function slideSwitchForth() {
 }
 
 function slideSwitchBack() {
-
 	if(isSlideAnim) { return; }
   isSlideAnim = true;
-
-
   var $active = $('.container-slider__slide.showed');
   var $prev =  $active.prev().length ? $active.prev() : $('.container-slider__slide:last');
 	$active.fadeOut(1000, function() {
@@ -93,6 +90,4 @@ function slideSwitchBack() {
 	$prev.fadeIn(1000).addClass('showed').find('.ui-caption-img').hide().delay(500).slideDown();
 	countSlide($prev.data('position'));
 }
-
-
 });
