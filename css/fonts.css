@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'bingleyitalic';
+    src: url('../fonts/bingley-italic-webfont.eot');
+    src: url('../fonts/bingley-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bingley-italic-webfont.woff') format('woff'),
+         url('../fonts/bingley-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bingleyregular';
+    src: url('../fonts/bingley-webfont.eot');
+    src: url('../fonts/bingley-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bingley-webfont.woff') format('woff'),
+         url('../fonts/bingley-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
